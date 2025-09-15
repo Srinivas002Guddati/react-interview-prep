@@ -1,0 +1,26 @@
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  gap: 6px;
+}
+
+.chip {
+  background-color: #e0e0e0;
+  padding: 6px 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chip button {
+  background: none;
+  border: none;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
