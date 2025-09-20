@@ -5,7 +5,8 @@ import './App.css';
 import ReadMoreToggle from './components/coding-challenges/ReadMoreToggle.js/ReadMoreToggle';
 import {Profile} from './components/core-concepts/higher-order-components';
 import withCompanyName from'./components/core-concepts/higher-order-components';
-
+import ReactPureComp from './components/core-concepts/pure-components';
+import Test from './components/core-concepts/classbased-comp-life-cycle-methods';
 function App() {
   // const fruits = ['apple', 'banana', 'orange', 'guava'];
   const EnhancedProfile = withCompanyName(Profile);
@@ -19,7 +20,9 @@ function App() {
           <li key={fruit}>{fruit}</li>
         ))}
       </ul> */}
-      <EnhancedProfile name="Srinivas" company="Meta" />
+      {/* <EnhancedProfile name="Srinivas" company="Meta" /> */}
+      {/* <ReactPureComp /> */}
+      <Test />
     </div>
   );
 }
