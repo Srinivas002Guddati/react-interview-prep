@@ -9,6 +9,7 @@ import ReactPureComp from './components/core-concepts/pure-components';
 import Test from './components/core-concepts/classbased-comp-life-cycle-methods';
 import UseStateExample from './components/core-concepts/hooks/useState-hook';
 import LayoutEffectDemo from './components/core-concepts/hooks/useLayoutEffect';
+import UseInsertionEffectDemo from "./components/core-concepts/hooks/useInsertionEffect";
 
 function App() {
   // const fruits = ['apple', 'banana', 'orange', 'guava'];
@@ -27,7 +28,8 @@ function App() {
       {/* <ReactPureComp /> */}  
       {/* <Test /> */}
       {/* <UseStateExample /> */}
-      <LayoutEffectDemo />
+      {/* <LayoutEffectDemo /> */}
+      <UseInsertionEffectDemo />
     </div>
   );
 }
