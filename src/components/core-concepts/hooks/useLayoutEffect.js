@@ -5,7 +5,7 @@ import React, { useRef, useState, useLayoutEffect } from 'react';
 
 //Scenario: Measure DOM elements width before paint
 
-function LayoutEffectDemo(){
+function LayoutEffectDemo1(){
     const [ width, setWidth ] = useState(0)
     const boxRef = useRef(null);
 
@@ -31,5 +31,26 @@ function LayoutEffectDemo(){
     )
 
 }
+
+//export default LayoutEffectDemo1;
+
+//Example: Auto-Focus an Input Field on Mount
+
+const LayoutEffectDemo = () =>{
+
+    const inputRef = useRef(null);
+    useLayoutEffect(()=>{
+        if(inputRef.current){
+            inputRef.current.focus();
+        }
+    },[]);
+
+    return(
+        <div>
+            <lable>Enter your name:</lable>
+            <input type="text" ref={inputRef} />
+        </div>
+    )
+};
 
 export default LayoutEffectDemo;
