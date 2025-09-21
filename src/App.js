@@ -10,6 +10,9 @@ import Test from './components/core-concepts/classbased-comp-life-cycle-methods'
 import UseStateExample from './components/core-concepts/hooks/useState-hook';
 import LayoutEffectDemo from './components/core-concepts/hooks/useLayoutEffect';
 import UseInsertionEffectDemo from "./components/core-concepts/hooks/useInsertionEffect";
+import UseRefDemo from "./components/core-concepts/hooks/useRef";
+
+
 
 function App() {
   // const fruits = ['apple', 'banana', 'orange', 'guava'];
@@ -29,7 +32,8 @@ function App() {
       {/* <Test /> */}
       {/* <UseStateExample /> */}
       {/* <LayoutEffectDemo /> */}
-      <UseInsertionEffectDemo />
+      {/* <UseInsertionEffectDemo /> */}
+      <UseRefDemo />
     </div>
   );
 }
