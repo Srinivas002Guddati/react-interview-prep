@@ -7,6 +7,7 @@ import {Profile} from './components/core-concepts/higher-order-components';
 import withCompanyName from'./components/core-concepts/higher-order-components';
 import ReactPureComp from './components/core-concepts/pure-components';
 import Test from './components/core-concepts/classbased-comp-life-cycle-methods';
+import UseStateExample from './components/core-concepts/hooks/useState-hook';
 function App() {
   // const fruits = ['apple', 'banana', 'orange', 'guava'];
   const EnhancedProfile = withCompanyName(Profile);
@@ -21,8 +22,9 @@ function App() {
         ))}
       </ul> */}
       {/* <EnhancedProfile name="Srinivas" company="Meta" /> */}
-      {/* <ReactPureComp /> */}
-      <Test />
+      {/* <ReactPureComp /> */}  
+      {/* <Test /> */}
+      <UseStateExample />
     </div>
   );
 }
