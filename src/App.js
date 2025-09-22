@@ -11,7 +11,8 @@ import UseStateExample from './components/core-concepts/hooks/useState-hook';
 import LayoutEffectDemo from './components/core-concepts/hooks/useLayoutEffect';
 import UseInsertionEffectDemo from "./components/core-concepts/hooks/useInsertionEffect";
 import UseRefDemo from "./components/core-concepts/hooks/useRef";
-
+import ToggleButton from "./components/core-concepts/custom-hooks/useToggle";
+import CounterComponent from "./components/core-concepts/custom-hooks/useCounter";
 
 
 function App() {
@@ -33,7 +34,9 @@ function App() {
       {/* <UseStateExample /> */}
       {/* <LayoutEffectDemo /> */}
       {/* <UseInsertionEffectDemo /> */}
-      <UseRefDemo />
+      {/* <UseRefDemo /> */}
+      {/* <ToggleButton /> */}
+      <CounterComponent />
     </div>
   );
 }
