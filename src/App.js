@@ -13,7 +13,7 @@ import UseInsertionEffectDemo from "./components/core-concepts/hooks/useInsertio
 import UseRefDemo from "./components/core-concepts/hooks/useRef";
 import ToggleButton from "./components/core-concepts/custom-hooks/useToggle";
 import CounterComponent from "./components/core-concepts/custom-hooks/useCounter";
-
+import PostList from "./components/core-concepts/custom-hooks/useFetch";
 
 function App() {
   // const fruits = ['apple', 'banana', 'orange', 'guava'];
@@ -36,7 +36,8 @@ function App() {
       {/* <UseInsertionEffectDemo /> */}
       {/* <UseRefDemo /> */}
       {/* <ToggleButton /> */}
-      <CounterComponent />
+      {/* <CounterComponent /> */}
+      <PostList />
     </div>
   );
 }
