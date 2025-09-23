@@ -14,6 +14,7 @@ import UseRefDemo from "./components/core-concepts/hooks/useRef";
 import ToggleButton from "./components/core-concepts/custom-hooks/useToggle";
 import CounterComponent from "./components/core-concepts/custom-hooks/useCounter";
 import PostList from "./components/core-concepts/custom-hooks/useFetch";
+import ParentComponent from "./components/performance-techniques/react-memo-pure-components";
 
 function App() {
   // const fruits = ['apple', 'banana', 'orange', 'guava'];
@@ -37,7 +38,8 @@ function App() {
       {/* <UseRefDemo /> */}
       {/* <ToggleButton /> */}
       {/* <CounterComponent /> */}
-      <PostList />
+      {/* <PostList /> */}
+      <ParentComponent />
     </div>
   );
 }
