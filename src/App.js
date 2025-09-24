@@ -17,9 +17,9 @@ import ToggleButton from "./components/core-concepts/custom-hooks/useToggle";
 import CounterComponent from "./components/core-concepts/custom-hooks/useCounter";
 import PostList from "./components/core-concepts/custom-hooks/useFetch";
 import ParentComponent from "./components/performance-techniques/react-memo-pure-components";
-
+import About from "./components/performance-techniques/lazy-loading-with-routes/About";
 const Home = lazy(()=>import('./components/performance-techniques/lazy-loading-with-routes/Home'));
-const About = lazy(()=>import('./components/performance-techniques/lazy-loading-with-routes/About'));
+//const About = lazy(()=>import('./components/performance-techniques/lazy-loading-with-routes/About'));
 const Contact = lazy(()=>import('./components/performance-techniques/lazy-loading-with-routes/Contact'));
 
 function App() {
@@ -52,7 +52,10 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            {/* Split Routes (Route-based code splitting) */}
+            <Route path="/about" element={ <Suspense fallback={<p>Loading...</p>}>
+              <About />
+            </Suspense>} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>

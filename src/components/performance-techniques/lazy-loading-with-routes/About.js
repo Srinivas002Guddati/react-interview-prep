@@ -10,10 +10,15 @@ Definition: Suspense is a React feature used to display a fallback UI while wait
 
 */
 
+import React from 'react';
+import UseMemoDemo from '../useMemo/useMemo';
 
 const About = () =>{
     return(
+        <>
         <h2>About Page</h2>
+        <UseMemoDemo />
+        </>
     )
 }
 
